@@ -1,6 +1,8 @@
 import os
 import re
 
+""" clear the folder from previous backups """
+
 dir_name = 'apps_installation'
 directory = os.listdir(dir_name)
 
