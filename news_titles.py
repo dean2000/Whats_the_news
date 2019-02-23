@@ -28,6 +28,6 @@ with smtplib.SMTP("smtp.gmail.com", 587) as server:
 	server.ehlo()  # Can be omitted
 	server.starttls(context=context)
 	server.ehlo()  # Can be omitted
-	server.login("servicedeanm@gmail.com", "dean_dean_123")
-	server.sendmail("servicedeanm@gmail.com", "deanmarkin3@gmail.com", mail_contex)
+	server.login("Your_mail@gmail.com", "Email_password")
+	server.sendmail("Your_email@gmail.com", "target_email@gmail.com", mail_contex)
 	server.quit()
