@@ -1,6 +1,11 @@
 import re
 import datetime
 
+"""
+This script writes to a file list of all
+apt applications that installed on your computer
+"""
+
 date = datetime.datetime.now().strftime('%d-%m-%y')
 
 history_1 = open("/var/log/apt/history.log.1", 'r')
