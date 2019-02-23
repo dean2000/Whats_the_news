@@ -42,8 +42,9 @@ def send_mail(send_from, password, send_to, subject, text,
 #uses in order to get th due date file
 date = datetime.datetime.now().strftime('%d-%m-%y')
 
-send_mail("servicedeanm@gmail.com", "dean_dean_123", ["deanmarkin3@gmail.com"]
+#can accept multiple adresses in a list
+send_mail("your_email@gmail.com", "email_password", ["target_email@gmail.com"]
 	, "aptList_backup", "attachments",
-	 files=[(f'/home/dean/Documents/python_files/apps_installation/installation_file{date}.txt')])
+	 files=[(f'/apps_installation/installation_file{date}.txt')])
 
 
