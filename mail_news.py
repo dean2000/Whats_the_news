@@ -7,6 +7,8 @@ from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate
 import datetime
 
+""" mail the news by connecting to a remote gmail account """
+
 def send_mail(send_from, password, send_to, subject, text,
          files=None):
     assert isinstance(send_to, list)
