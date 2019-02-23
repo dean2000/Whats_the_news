@@ -4,6 +4,8 @@ import smtplib
 import ssl
 import datetime
 
+""" extract all the titles from 'https://www.bbc.com/news' """
+
 #extract the date from datetime.now method
 current_date = (datetime.datetime.date(datetime.datetime.now()))
 current_time = str(datetime.datetime.time(datetime.datetime.now()))[:8]
